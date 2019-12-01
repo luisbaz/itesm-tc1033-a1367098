@@ -105,4 +105,66 @@ class Traveller_r():
                 traveller_object=Traveller(self,_passport,_forename,_surname,_birth,_country,_gender,_marital)
                 info_travellers[passport]=traveller_object
 
+class Attendant():
+    def __init__(self,_passport,_forename,_surname,_birth,_country,_gender,_marital):
+        self._passport=passport
+        self._forename=forename
+        self._surname=surname
+        self._birth=birth
+        self._country=country
+        self._gender=gender
+        self._marital=m_status
 
+
+class Flight():
+    def __init__(self,_plate,_origin,_destiny,_departure,_arriving,_status,_d_gate,_to_gate,_a_gate,_landing,_pilot,_copilot,_attendants):
+        self._plate=plate
+        self._origin=origin
+        self._destiny=destiny
+        self._departure=departure
+        self._arriving=arriving
+        self._status=status
+        self._d_gate=d_gate
+        self._to_gate=to_gate
+        self._a_gate=a_gate
+        self._landing=landing
+        self._pilot=pilot
+        self._copilot=copilot
+        self._attendants=attendants
+        
+class Passenger():
+    def __init__(self,_flight,_passport,_clase,_seat,_location):
+        self._flight=flight
+        self._passport=passport
+        self._clase=clase
+        self._seat=seat
+        sef._location=location
+
+class Pilot():
+    def __init__(self,_passport,_forename,_surname,_birth,_country,_gender,_marital):
+        self._passport=passport
+        self._forename=forename
+        self._surname=surname
+        self._birth=birth
+        self._country=country
+        self._gender=gender
+        self._marital=m_status
+
+class Plane():
+    def __init__(self,_plate,_manufacturer,_model,_pgr_capacity,_lgg_capacity,_max_speed):
+        self._plate=plate
+        self._manufacturer=manufacturer
+        self._model=model
+        self._pgr_capacity=pgr_capacity
+        self._lgg_capacity=lgg_capacity
+        self._max_speed=max_speed
+        
+class Traveller():
+    def __init__(self,_passport,_forename,_surname,_birth,_country,_gender,_marital):
+        self._passport=passport
+        self._forename=forename
+        self._surname=surname
+        self._birth=birth
+        self._country=country
+        self._gender=gender
+        self._marital=m_status
